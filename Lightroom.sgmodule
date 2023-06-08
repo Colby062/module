@@ -2,8 +2,8 @@
 #!desc=Lightroom
 
 #Author:Colby062
-#Telegram:https://t.me/ftos_apple
-#Chỉ để tham khảo, cấm sử dụng thương mai và bán !
+#Telegram:https://t.me/ftos_team
+#Chỉ để tham khảo, cấm sử dụng thương mai
 
 [MITM]
 hostname=%APPEND% photos.adobe.io
