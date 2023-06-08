@@ -1,0 +1,15 @@
+#!name=Unlock Picsart
+#!desc=Picsart
+
+#Author:Colby062
+#Telegram:https://t.me/ftos_team
+#Chỉ để tham khảo, cấm sử dụng thương mại
+
+[Header Rewrite]
+^https:\/\/api\.(picsart|meiease)\.c(n|om)\/users\/show\/me\.json header-del if-none-match
+
+[Script]
+Picsart = type=http-response,pattern=^https:\/\/api\.(picsart|meiease)\.c(n|om)\/users\/show\/me\.json,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Colby062/scripts/main/Picsart.js
+
+[MITM]
+hostname = %APPEND% api.picsart.c*, api.meiease.c*
