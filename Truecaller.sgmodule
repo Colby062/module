@@ -1,0 +1,12 @@
+#!name=Unlock Truecaller
+#!desc=Truecaller Gold
+
+#Author:Colby062
+#Telegram:https://t.me/ftos_apple
+#Chỉ để tham khảo, cấm sử dụng thương mai
+
+[MITM]
+hostname = %APPEND% premium*.truecaller.com
+
+[Script]
+Truecaller = type=http-response,pattern=^https://premium-(.+)\.truecaller\.com/v\d/(subscriptions|products\/apple),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/Colby062/scripts/main/Truecaller.js
